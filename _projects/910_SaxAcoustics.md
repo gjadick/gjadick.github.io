@@ -4,7 +4,7 @@ title: Saxophone acoustics (2019-2020)
 description: Saxophone acoustics (2019-2020)
 ---
 
-![3D_model](https://today.duke.edu/sites/default/files/legacy-files/styles/story_body/public/ResoFG%20model%20image0.jpg?itok=tUz_L2bJ "3D model of the microCT-scanned Reso, Freddie Gregory refacing")
+![3D_model]({{site.baseurl}}/assets/images/ResoFG_model.jpeg "3D model of the microCT-scanned Reso, Freddie Gregory refacing")
 
 MicroCT scanning, digitally analyzing, and 3D printing vintage saxophone mouthpieces
 ============

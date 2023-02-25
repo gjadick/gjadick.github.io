@@ -7,17 +7,18 @@ profile:
 published: true
 ---
 
-Hello! I’m Gia Jadick. I am a Ph.D. student at the University of Chicago, where I research advanced CT imaging methods in the lab of Patrick La Rivière. I am currently working on a few spectral CT projects, one on MV-kV dual energy imaging, and another on cardiac CT imaging. In the past, I have worked on realistic simulation of CT imaging and CT reconstruction algorithms. I completed my undergraduate studies in Physics and Political Science at Duke University, where I conducted research in biophysics and acoustics of music. 
+Hello! I’m Gia Jadick. I am a Ph.D. student at the University of Chicago, where I research advanced CT imaging methods in the lab of Patrick La Rivière. I am currently working on a few spectral CT projects, one on MV-kV dual energy CT imaging, and another on cardiac CT imaging. In the past, I have worked on realistic simulation of CT imaging and CT reconstruction algorithms. I completed my undergraduate studies in Physics and Political Science at Duke University, where I conducted research in biophysics and acoustics of music. 
 
-I am passionate about community outreach, and I enjoy developing new medical physics demos for our graduate program to present at various outreach events. As part of my teaching and outreach activities, I've also created a few simulation-based demos and interactive Jupyter Notebooks, which are all on my GitHub. In my free time, I am an avid sci-fi reader, and I play alto saxophone in the UofC jazz ensemble.
+In addition to research, I am passionate about community outreach, and I enjoy developing new medical physics demos for our graduate program to present at different events. As part of my teaching and outreach activities, I've also created a few simulation-based demos and interactive Jupyter Notebooks, which are all on my GitHub. In my free time, I am an avid sci-fi reader, and I play alto saxophone in the UofC jazz ensemble.
 
 Skills
 -------
+Most of my research is computational, with a focus on simulation and image analysis. I typically use Python, with some C++ or CUDA if speed is important. I am also comfortable with MATLAB and Mathematica. My experimental skills are mostly from laboratory courses and undergraduate research experiences.
 
 * Computational: Bash, C, C++, CUDA, ImageJ, LATEX, Linux/Unix, Python, MATLAB,
 Mathematica, Surface Evolver
 
-* Experimental: Microscopy (DIC, confocal, AFM), micro-CT, electronics, wet lab
+* Experimental: CT, Microscopy (DIC, confocal, AFM), micro-CT, electronics, wet lab
 
 
 Publications & Presentations
