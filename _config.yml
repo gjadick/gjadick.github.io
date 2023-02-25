@@ -1,7 +1,7 @@
 ### your site title here
 
-title: Giavanna Jadick x
-description: PhD Student  |  University of Chicago  |  Medical Physics
+title: Giavanna Jadick
+description: PhD Student | University of Chicago | Medical Physics
 
 baseurl: /gradfolio #name of GitHub repository
 url: "" #custom url to be used instead of GitHub repository
@@ -13,11 +13,10 @@ permalink: /blog/:year/:title/
 paginate_path: /blog/page:num/
 
 # Social media links in footer
-twitter: "#giajadick"
-linkedin: "#giajadick"
-github: "#gjadick"
-researchgate: "#"
-orcid: "#0000-0002-4894-2895"
+twitter: "giajadick"
+linkedin: "giajadick"
+github: "gjadick"
+orcid: "0000-0002-4894-2895"
 
 
 # Markdown
@@ -44,12 +43,13 @@ collections:
     output: true
     permalink: /projects/:name/
     order:
-      - shortProject.md
-      - longerProjectTitle.md
-      - redirect.md
-      - project4.md
-      - project5.md
-      - project6.md
+      - 110_MVkV.md
+      - 120_Outreach.md
+      - 200_FBPrecon.md
+      - 810_DukeSim.md
+      - 910_SaxAcoustics.md
+      - 920_Biophysics.md
+
 
 sass:
   sass_dir: /assets/css/_sass

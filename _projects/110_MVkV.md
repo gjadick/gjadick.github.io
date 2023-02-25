@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Project 5
-description: another project
+title: MV-kV dual energy CT
+description: MV-kV dual energy CT
 ---
 
-Example modified from [here](http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html){:target="_blank"}.
 
-H1 Header
+MV-kV Dual Energy CT imaging
 ============
 
-Paragraphs are separated by a blank line.
+I'm working on quantifying best-achievable image quality for a dual energy CT system that jointly utilizes megavoltage (MV) and kilovoltage (kV) spectra. Such a system could be useful for improving image contrast in radiation therapy settings. I have developed a single-ray toy model and a fan-beam CT raytracing simulation for this purpose. I recently presented this work at SPIE Medical Imaging 2023. 
+
+
 
 2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
 look like:
