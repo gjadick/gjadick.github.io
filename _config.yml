@@ -3,8 +3,8 @@
 title: Giavanna Jadick
 description: PhD Student | University of Chicago | Medical Physics
 
-baseurl: /gradfolio #name of GitHub repository
-url: "" #custom url to be used instead of GitHub repository
+baseurl: "/" #name of GitHub repository
+url: "https://giajadick.com" #custom url to be used instead of GitHub repository
 email: #
 
 # Pagination
