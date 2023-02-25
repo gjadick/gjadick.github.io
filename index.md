@@ -9,7 +9,15 @@ published: true
 
 Hello! I’m Gia Jadick. I am a Ph.D. student at the University of Chicago, where I research advanced CT imaging methods in the lab of Patrick La Rivière. I am currently working on a few spectral CT projects, one on MV-kV dual energy imaging, and another on cardiac CT imaging. In the past, I have worked on realistic simulation of CT imaging and CT reconstruction algorithms. I completed my undergraduate studies in Physics and Political Science at Duke University, where I conducted research in biophysics and acoustics of music. 
 
-I am also passionate about community outreach, and I enjoy developing new medical physics demos for our graduate program to present at various outreach events. In my free time, I am an avid sci-fi reader, and I play alto saxophone in the UofC jazz ensemble.
+I am passionate about community outreach, and I enjoy developing new medical physics demos for our graduate program to present at various outreach events. As part of my teaching and outreach activities, I've also created a few simulation-based demos and interactive Jupyter Notebooks, which are all on my GitHub. In my free time, I am an avid sci-fi reader, and I play alto saxophone in the UofC jazz ensemble.
+
+Skills
+-------
+
+* Computational: Bash, C, C++, CUDA, ImageJ, LATEX, Linux/Unix, Python, MATLAB,
+Mathematica, Surface Evolver
+
+* Experimental: Microscopy (DIC, confocal, AFM), micro-CT, electronics, wet lab
 
 
 Publications & Presentations
