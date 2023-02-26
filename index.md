@@ -39,7 +39,7 @@ validation of a CT simulator using a COPD-emulated anthropomorphic phantom.”
 *Proc. SPIE. 12031, Medical Imaging 2022: Physics of Medical Imaging*, 2022.
 
 Abadi E, **Jadick G**, McCabe C, Sotoudeh S, Fryling M, Harrawood B, Samei E, Havadej S,
-Sedlmair M, Ramirez JC, Stirestorfer S. “Development and Application of a Virtual Imaging Trial Platform to Evaluate and Optimize State-of-the-art Photon-Counting CT.” *RSNA*,
+Sedlmair M, Ramirez JC, Stierstorfer K. “Development and Application of a Virtual Imaging Trial Platform to Evaluate and Optimize State-of-the-art Photon-Counting CT.” *RSNA*,
 December 2021.
 
 **G Jadick**, E Abadi, B Harrawood, S Sharma, WP Segars, E
