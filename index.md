@@ -7,9 +7,16 @@ profile:
 published: true
 ---
 
-Hello! I’m Gia Jadick. I am a Ph.D. student at the University of Chicago, where I research advanced CT imaging methods in the lab of Patrick La Rivière. I am currently working on a few spectral CT projects, one on MV-kV dual energy CT imaging, and another on cardiac CT imaging. In the past, I have worked on realistic simulation of CT imaging and CT reconstruction algorithms. I completed my undergraduate studies in Physics and Political Science at Duke University, where I conducted research in biophysics and acoustics of music. 
+Hello! I’m Gia Jadick. I am an NSF Graduate Research Fellow and Ph.D. student at the University of Chicago, where I research multi-energy CT imaging in the lab of Patrick La Rivière. I am currently working on a few projects:
 
-In addition to research, I am passionate about community outreach, and I enjoy developing new medical physics demos for our graduate program to present at different events. As part of my teaching and outreach activities, I've also created a few simulation-based demos and interactive Jupyter Notebooks, which are all on my GitHub. In my free time, I am an avid sci-fi reader, and I play alto saxophone in the UofC jazz ensemble.
+1. MV-kV dual-energy CT for imaging in radiation therapy
+2. Multi-material triplet decomposition for cardiac CT imaging
+3. X-ray phase contrast for soft tissue imaging
+
+In the past, I have worked on CT simulation and CT reconstruction algorithms. I completed my undergraduate studies in Physics and Political Science at Duke University, where I conducted research in biophysics and acoustics of music. I also spent a gap year at Duke working with Ehsan Samei and Ehsan Abadi in RAI Labs, where I helped develop DukeSim, a realistic CT simulator that uses a hybrid of raytracing and Monte Carlo methods. 
+
+In addition to research, I am passionate about community outreach, and I enjoy developing new medical physics demos for our graduate program to present at different events. As part of my teaching and outreach activities, I've also created a few simulation-based demos and interactive Jupyter Notebooks, which are all on 
+[my GitHub](https://github.com/gjadick). In my free time, I am an avid sci-fi reader, and I play alto saxophone in the UofC jazz ensemble.
 
 Skills
 -------
@@ -23,6 +30,8 @@ Mathematica, Surface Evolver
 
 Publications & Presentations
 ---------------	
+
+**G Jadick**, P La Rivière. "Dual energy CT imaging with a megavoltage spectrum." *AAPM Midwest Chapter Meeting, Young Investigator Symposium*, 2023.
 
 **G Jadick**, P La Rivière. “Optimization of MV-kV dual energy CT imaging for tomographic
 therapy.” *Proc. SPIE. 12463, Medical Imaging 2023: Physics of Medical Imaging*, 2023.
