@@ -1,6 +1,6 @@
 @media screen and (max-width: 1400px) {
     #profile {
-      height: 83vh;
+      /* height: 83vh; */
       margin-bottom: 6rem;
     }
     .about-containers {
@@ -20,8 +20,9 @@
       display: flex;
     }
     #publications,
-    .experience-details-container {
+    .research-details-container {
       margin-top: 2rem;
+      font-size: 1rem;
     }
     #profile,
     .section-container {
@@ -38,8 +39,8 @@
       margin: 0 5%;
     }
     .section__pic-container {
-      width: 275px;
-      height: 275px;
+      width: 420px;
+      height: 420px;
       margin: 0 auto 2rem;
     }
     .about-containers {
@@ -53,11 +54,8 @@
       height: 40vh;
     }
     #profile {
-      height: 83vh;
+      height: 83vh;   /* take whole screen on mobile */
       margin-bottom: 0;
-    }
-    article {
-      font-size: 1rem;
     }
     footer nav {
       height: fit-content;
@@ -75,7 +73,7 @@
     .nav-links li a {
       font-size: 1rem;
     }
-    .experience-sub-title {
+    .research-sub-title {
       font-size: 1.25rem;
     }
     .logo {
@@ -87,17 +85,18 @@
       text-align: center;
     }
     .section__pic-container {
-      width: auto;
-      height: 46vw;
+      width: 70vw;
+      height: 70vw;
       justify-content: center;
     }
     .section__text__p2 {
-      font-size: 1.25rem;
+      font-size: 1rem;
     }
     .title {
       font-size: 2rem;
     }
     .text-container {
+      font-size: 1rem;
       text-align: justify;
     }
 }
