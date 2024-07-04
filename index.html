@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+
+    <nav id="desktop-nav">
+      <div class="logo">Giavanna Jadick</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <!-- <li><a href="#teaching">Teaching</a></li> -->
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Giavanna Jadick</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#research" onclick="toggleMenu()">Research</a></li>
+          <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/gjadick_headshot_transparent.png" alt="Gia Jadick profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Gia Jadick</h1>
+        <p class="section__text__p2">PhD Candidate @ UChicago</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/jadick_cv.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/giajadick/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/gjadick/'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/present2.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+                Hello! I’m Gia Jadick. I am a medical physics PhD candidate at the University of Chicago,
+                where I research novel x-ray imaging techniques in the lab of Patrick La Rivière.
+                Currently, I am focused on x-ray and CT imaging with propagation-based phase contrast. 
+                My goal is to develop a quantitative solution to the spectral phase retrieval problem,
+                which would broadly benefit biomedical researchers seeking a 
+                convenient, micron-resolution, 3-D modality for soft-tissue imaging.
+            </p>
+            <p>
+                I graduated cum laude from Duke University in 2020 with my BS in physics and 
+                BA in political science. There, I researched mechanosensing of E. Coli 
+                bacteria, vintage saxophone mouthpiece acoustics, and the physics of realistic CT simulation.
+            </p>
+            <p>
+                All of my research code (and more!) is publicly available on Github
+                for anyone to use and build upon. I've linked some key repositories in the "Research" section below.
+                My PhD studies are funded by the National Science Foundation's Graduate Research Fellowship Program.
+                I anticipate graduating in spring of 2026.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#research'"
+      />
+    </section>
+
+    <section id="research">
+        <h1 class="title">Ongoing Research Projects</h1>
+        <div class="research-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <h2 class="experience-sub-title project-title">X-ray phase contrast</h2>
+                <div class="article-container">
+                <img
+                    src="./assets/xpci_fish.png"
+                    alt="MV-kV dual energy imaging "
+                    class="project-img"
+                />
+                </div>
+                <p> We are exploring the potential utility of spectral x-ray imaging 
+                    with propagation-based phase contrast. 
+                    I've developed an estimation theory approach to compare spectral
+                    and multi-distance phase-contrast imaging techniques in the context
+                    of basis material decomposition.
+                    I am also assessing the limits of traditional approximations made
+                    in XPCI forward models.
+                </p>
+                <div class="btn-container">
+                <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/gjadick/xpc-sim/'"
+                >
+                    Github
+                </button>
+                </div>
+            </div>
+
+            <div class="details-container color-container">
+                <h2 class="experience-sub-title project-title">Multi-material decomposition</h2>
+                <div class="article-container">
+                <img
+                    src="./assets/mmd.png"
+                    alt="Figure of the multi-material decomposition method."
+                    class="project-img"
+                />
+                </div>
+                <!-- <p> about.</p> -->
+                <div class="btn-container">
+                <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/gjadick/multi-mat-decomp/'"
+                >
+                    Github
+                </button>
+                </div>
+            </div>
+
+            <div class="details-container color-container">
+                <h2 class="experience-sub-title project-title">Dual-energy CT</h2>
+                <div class="article-container">
+                <img
+                    src="./assets/mvkv.jpeg"
+                    alt="MV-kV dual-energy imaging on the cover of JMI."
+                    class="project-img"
+                />
+                </div>
+                <p> We assessed a novel dual-energy CT approach: combining
+                    a megavoltage (MV) and kilovoltage (kV) source in "MV-kV" imaging for use
+                    on radiotherapy systems that are conveniently already equipped 
+                    with the two x-ray sources.
+                    Our publication was featured on the cover of JMI.</p>
+                <div class="btn-container">
+                <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/gjadick/dex-ct-sim/'"
+                >
+                    Github
+                </button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#publications'"
+         />
+    </section>
+
+    <section id="publications">
+        <h1 class="title">Publications & Presentations</h1>
+        <div class="pubs-container">
+                <p>[1]
+                G. Jadick, G. Schlafly, and P. J. La Rivière, “Dual-energy computed tomography imaging with megavoltage and kilovoltage X-ray spectra,” Journal of Medical Imaging, vol. 11, no. 2, pp. 023501–023501, 2024.
+                </p><p>[2]
+                G. Jadick and P. La Rivière, “Cramér–Rao lower bound in the context of spectral X-ray imaging with propagation-based phase contrast,” in Medical Imaging 2024: Physics of Medical Imaging, 2024, vol. 12925.
+                </p><p>[3]
+                G. Jadick, I. Reiser, and P. La Rivière, “Sensitivity analysis of dual-energy computed tomography multi-triplet material decomposition,” in Medical Imaging 2024: Physics of Medical Imaging, 2024, vol. 12925.
+                </p><p>[4]
+                H. DeBrosse, G. Jadick, L. Meng, and P. La Rivière, “Comparing x-ray fluorescence emission tomography and computed tomography: contrast-to-noise ratios in a numerical mouse phantom,” in Medical Imaging 2024: Clinical and Biomedical Imaging, 2024, vol. 12930.
+                </p><p>[5]
+                M. Ventura, G. Jadick, and P. La Rivière, “Comparison of energy-integrating detectors and photon-counting detectors for MV-kV dual-energy imaging on a tomographic therapy system,” in Medical Imaging 2024: Physics of Medical Imaging, 2024, vol. 12925.
+                </p><p>[6]
+                G. Jadick and P. L. Rivière, Dual energy CT imaging with a megavoltage spectrum. American Association of Physicists in Medicine, Midwest Chapter Meeting, 2023.
+                </p><p>[7]
+                E. Abadi, G. Jadick, D. A. Lynch, W. P. Segars, and E. Samei, “Emphysema quantifications with CT scan: Assessing the effects of acquisition protocols and imaging parameters using virtual imaging trials,” Chest, vol. 163, no. 5, pp. 1084–1100, 2023.
+                </p><p>[8]
+                G. Jadick and P. La Rivière, “Optimization of MV-kV dual-energy CT imaging for tomographic therapy,” in Medical Imaging 2023: Physics of Medical Imaging, 2023, vol. 12463, pp. 557–566.
+                </p><p>[9]
+                F. Ria, G. L. Jadick, E. Abadi, J. B. Solomon, and E. Samei, “Comparing two different noise magnitude estimation methods in CT using virtual imaging trials,” in Medical Imaging 2022: Physics of Medical Imaging, 2022, vol. 12031, pp. 729–734.
+                </p><p>[10]
+                S. S. Shankar et al., “Scanner-specific validation of a CT simulator using a COPD-emulated anthropomorphic phantom,” in Medical Imaging 2022: Physics of Medical Imaging, 2022, vol. 12031, pp. 953–960.
+                </p><p>[11]
+                E. Abadi et al., Development and Application of a Virtual Imaging Trial Platform to Evaluate and Optimize State-of-the-art Photon-Counting CT. Radiological Society of North America Annual Meeting, 2021.
+                </p><p>[12]
+                E. Abadi, G. Jadick, E. A. Hoffman, D. Lynch, W. P. Segars, and E. Samei, “COPD quantifications via CT imaging: ascertaining the effects of acquisition protocol using virtual imaging trial,” in Medical Imaging 2021: Physics of Medical Imaging, 2021, vol. 11595, pp. 160–166.
+                </p><p>[13]
+                G. Jadick, E. Abadi, B. Harrawood, S. Sharma, W. P. Segars, and E. Samei, “A scanner-specific framework for simulating CT images with tube current modulation,” Physics in Medicine & Biology, vol. 66, no. 18, p. 185010, 2021.
+                </p><p>[14]
+                G. Jadick, E. Abadi, B. Harrawood, S. Sharma, W. P. Segars, and E. Samei, “A framework to simulate CT images with tube current modulation,” in Medical Imaging 2021: Physics of Medical Imaging, 2021, vol. 11595, pp. 22–30.
+                </p><p>[15]
+                G. Jadick, M. Bartlett, M. Busch, and J. Socolar, The art and craft of saxophone mouthpiece design. Fortin Foundation Bass Connections Virtual Showcase, 2020.
+                </p><p>[16]
+                G. Jadick, R. Garces, and C. Schmidt, Physiology of E. Coli bacteria in high external osmotic pressure. Conference for undergraduate women in physics at the University of Maryland, 2020.
+                </p><p>[17]
+                G. Jadick, Gender representation in science policy: A study of Capitol Hill. Sigma Pi Sigma Physics Congress in Providence, RI, 2019.
+                </p><p>[18]
+                D. J. Downs, G. Jadick, F. Swaid, S. B. Ross, and A. S. Rosemurgy, “Age and achalasia: how does age affect patient presentation, hospital course, and surgical outcomes?,” The American Surgeon, vol. 83, no. 9, pp. 952–961, 2017.
+                </p><p>[19]
+                A. Rosemurgy et al., “Dissatisfaction after laparoscopic Heller myotomy: The truth is easy to swallow,” The American Journal of Surgery, 2017.
+                </p>
+        </div>
+        <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#contact'"
+        />
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+            <img
+                src="./assets/email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+            />
+            <p>giavanna [at] uchicago [dot] edu</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>&#169; Giavanna Jadick 2024 | Last updated on 03 July 2024</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
