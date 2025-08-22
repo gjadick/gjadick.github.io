@@ -5,11 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gia Jadick</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="apple-touch-icon" href="favicon_192x192.png" />
     <link rel="icon" sizes="192x192" href="favicon_192x192.png" />
+    <link
+      rel="preload"
+      href="/fonts/texgyreadventor-regular.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/texgyreadventor-bold.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
   </head>
 
   <body>
@@ -36,7 +50,9 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#research" onclick="toggleMenu()">Research</a></li>
-          <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
+          <li>
+            <a href="#publications" onclick="toggleMenu()">Publications</a>
+          </li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -44,7 +60,10 @@
 
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/gjadick_headshot_transparent.png" alt="Picture of Gia Jadick" />
+        <img
+          src="./assets/gjadick_headshot_transparent.png"
+          alt="Picture of Gia Jadick"
+        />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -91,23 +110,38 @@
         <div class="about-details-container">
           <div class="text-container">
             <p>
-              Hello! I’m Gia Jadick. I am a medical physics PhD candidate at the University of Chicago,
-              where I research novel x-ray imaging techniques in the lab of Patrick La Rivière.
-              Currently, I am focused on x-ray and CT imaging with propagation-based phase contrast. 
-              My goal is to develop a quantitative solution to the spectral phase retrieval problem,
-              which would broadly benefit biomedical researchers seeking a 
-              convenient, micron-resolution, 3-D modality for soft-tissue imaging.
+              Hello! I’m Gia Jadick. I am a medical physics PhD candidate at the
+              University of Chicago, where I research novel x-ray imaging
+              techniques in the lab of Patrick La Rivière. I focus on x-ray and
+              CT imaging with propagation-based phase contrast. My goal is to
+              develop a quantitative solution to the spectral phase retrieval
+              problem, which would broadly benefit biomedical researchers
+              seeking a convenient, micron-resolution, 3-D modality for
+              soft-tissue imaging.
             </p>
             <p>
-              I graduated cum laude from Duke University in 2020 with my BS in physics and 
-              BA in political science. There, I researched mechanosensing of E. Coli 
-              bacteria, vintage saxophone mouthpiece acoustics, and the physics of realistic CT simulation.
+              I build and share quantitative tools, including a phase-contrast
+              Cramér–Rao lower bound model and large-scale, GPU-accelerated,
+              automatic-differentiable Python simulator for projection and
+              tomographic imaging. I am in the process of leveraging my
+              simulator's forward model to solve the spectral phase retrieval
+              problem with an iterative material decomposition approach based on
+              automatic differentiation with phase-contrast physics-informed
+              regularization strategies.
             </p>
             <p>
-              All of my research code (and more!) is publicly available on Github
-              for anyone to use and build upon. I've linked some key repositories in the "Research" section below.
-              My PhD studies are funded by the National Science Foundation's Graduate Research Fellowship Program.
-              I anticipate graduating in spring of 2026.
+              I graduated cum laude from Duke University in 2020 with my BS in
+              physics and BA in political science. There, I researched
+              mechanosensing of E. Coli bacteria, vintage saxophone mouthpiece
+              acoustics, and the physics of realistic CT simulation.
+            </p>
+            <p>
+              All of my research code (and more!) is publicly available on
+              Github for anyone to use and build upon. I've linked some key
+              repositories in the "Research" section below. My PhD studies are
+              funded by the NSF Graduate Research Fellowship Program with
+              additional support from the AAPM/RSNA Graduate Fellowship. I
+              anticipate graduating in spring of 2026.
             </p>
           </div>
         </div>
@@ -124,146 +158,480 @@
       <h1 class="title">Ongoing Research Projects</h1>
       <div class="research-details-container">
         <div class="about-containers">
-        <div class="details-container color-container">
-          <h2 class="research-sub-title project-title">X-ray phase contrast</h2>
-          <div class="article-container">
-          <img
-            src="./assets/xpci_fish.png"
-            alt="MV-kV dual energy imaging "
-            class="project-img"
-          />
+          <div class="details-container color-container">
+            <h2 class="research-sub-title project-title">
+              X-ray phase contrast
+            </h2>
+            <div class="article-container">
+              <img
+                src="./assets/xpci_fish.png"
+                alt="MV-kV dual energy imaging "
+                class="project-img"
+              />
+            </div>
+            <p>
+              We are exploring the potential utility of spectral x-ray imaging
+              with propagation-based phase contrast. I've developed an
+              estimation theory approach to compare spectral and multi-distance
+              phase-contrast imaging techniques in the context of basis material
+              decomposition. I am also assessing the limits of traditional
+              approximations made in XPCI forward models.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/gjadick/xpc-sim/'"
+              >
+                Github
+              </button>
+            </div>
           </div>
-          <p> 
-            We are exploring the potential utility of spectral x-ray imaging 
-            with propagation-based phase contrast. 
-            I've developed an estimation theory approach to compare spectral
-            and multi-distance phase-contrast imaging techniques in the context
-            of basis material decomposition.
-            I am also assessing the limits of traditional approximations made
-            in XPCI forward models.
-          </p>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/gjadick/xpc-sim/'"
-            >
-              Github
-            </button>
+
+          <div class="details-container color-container">
+            <h2 class="research-sub-title project-title">
+              Multi-material decomposition
+            </h2>
+            <div class="article-container">
+              <img
+                src="./assets/mmd.png"
+                alt="Figure of the multi-material decomposition method."
+                class="project-img"
+              />
+            </div>
+            <!-- <p> about.</p> -->
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/gjadick/multi-mat-decomp/'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <h2 class="research-sub-title project-title">Dual-energy CT</h2>
+            <div class="article-container">
+              <img
+                src="./assets/mvkv.jpeg"
+                alt="MV-kV dual-energy imaging on the cover of JMI."
+                class="project-img"
+              />
+            </div>
+            <p>
+              We assessed a novel dual-energy CT approach: combining a
+              megavoltage (MV) and kilovoltage (kV) source in "MV-kV" imaging
+              for use on radiotherapy systems that are conveniently already
+              equipped with the two x-ray sources. Our publication was featured
+              on the cover of JMI.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/gjadick/dex-ct-sim/'"
+              >
+                Github
+              </button>
+            </div>
           </div>
         </div>
-
-        <div class="details-container color-container">
-          <h2 class="research-sub-title project-title">Multi-material decomposition</h2>
-          <div class="article-container">
-          <img
-            src="./assets/mmd.png"
-            alt="Figure of the multi-material decomposition method."
-            class="project-img"
-          />
-          </div>
-          <!-- <p> about.</p> -->
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/gjadick/multi-mat-decomp/'"
-            >
-              Github
-            </button>
-          </div>
-        </div>
-
-        <div class="details-container color-container">
-          <h2 class="research-sub-title project-title">Dual-energy CT</h2>
-          <div class="article-container">
-          <img
-            src="./assets/mvkv.jpeg"
-            alt="MV-kV dual-energy imaging on the cover of JMI."
-            class="project-img"
-          />
-          </div>
-          <p> 
-            We assessed a novel dual-energy CT approach: combining
-            a megavoltage (MV) and kilovoltage (kV) source in "MV-kV" imaging for use
-            on radiotherapy systems that are conveniently already equipped 
-            with the two x-ray sources.
-            Our publication was featured on the cover of JMI.</p>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/gjadick/dex-ct-sim/'"
-            >
-              Github
-            </button>
-          </div>
-        </div>
-
       </div>
-    </div>
-    <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#publications'"
-    />
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#publications'"
+      />
     </section>
 
     <section id="publications">
       <h1 class="title">Publications & Presentations</h1>
-      <div class="pubs-container">
-        <p>[1]
-          E. Abadi, W. P. Segars, N. Felice, S. Sotoudeh-Paima, E. A. Hoffman, X. Wang, W. Wang, D. Clark, S. Ye, G.
-          Jadick, M. Fryling, D. P. Frush, and E. Samei, “AAPM Truth-based CT (TrueCT) reconstruction grand challenge,” Medical Physics, pp. 1–13, 2025.
-        </p><p>[2]
-          G. Jadick, M. Ventura, and P. J. La Rivière, “Utility of photon-counting detectors for MV-kV dual-energy
-          computed tomography imaging,” Journal of Medical Imaging, vol. 11, no. S1, pp. S12 811–S12 811, 2024.
-        </p><p>[3]
-          H. DeBrosse, G. Jadick, L. J. Meng, and P. La Rivière, “Contrast-to-noise ratio comparison between x-ray
-          fluorescence emission tomography and computed tomography,” Journal of Medical Imaging, 2024.
-        </p> <p>[4]
-          G. Jadick, G. Schlafly, and P. La Rivière, “Dual-energy computed tomography imaging with megavoltage and kilovoltage X-ray spectra,” Journal of Medical Imaging, vol. 11, no. 2, pp. 023501–023501, 2024.
-        </p><p>[5]
-          G. Jadick and P. La Rivière, “Cramér–Rao lower bound in the context of spectral X-ray imaging with propagation-based phase contrast,” in Medical Imaging 2024: Physics of Medical Imaging, 2024, vol. 12925.
-        </p><p>[6]
-          G. Jadick, I. Reiser, and P. La Rivière, “Sensitivity analysis of dual-energy computed tomography multi-triplet material decomposition,” in Medical Imaging 2024: Physics of Medical Imaging, 2024, vol. 12925.
-        </p><p>[7]
-          H. DeBrosse, G. Jadick, L. Meng, and P. La Rivière, “Comparing x-ray fluorescence emission tomography and computed tomography: contrast-to-noise ratios in a numerical mouse phantom,” in Medical Imaging 2024: Clinical and Biomedical Imaging, 2024, vol. 12930.
-        </p><p>[8]
-          M. Ventura, G. Jadick, and P. La Rivière, “Comparison of energy-integrating detectors and photon-counting detectors for MV-kV dual-energy imaging on a tomographic therapy system,” in Medical Imaging 2024: Physics of Medical Imaging, 2024, vol. 12925.
-        </p><p>[9]
-          G. Jadick and P. La Rivière, “Dual energy CT imaging with a megavoltage spectrum.” American Association of Physicists in Medicine, Midwest Chapter Meeting, 2023.
-        </p><p>[10]
-          E. Abadi, G. Jadick, D. A. Lynch, W. P. Segars, and E. Samei, “Emphysema quantifications with CT scan: Assessing the effects of acquisition protocols and imaging parameters using virtual imaging trials,” Chest, vol. 163, no. 5, pp. 1084–1100, 2023.
-        </p><p>[11]
-          G. Jadick and P. La Rivière, “Optimization of MV-kV dual-energy CT imaging for tomographic therapy,” in Medical Imaging 2023: Physics of Medical Imaging, 2023, vol. 12463, pp. 557–566.
-        </p><p>[12]
-          F. Ria, G. Jadick, E. Abadi, J. B. Solomon, and E. Samei, “Comparing two different noise magnitude estimation methods in CT using virtual imaging trials,” in Medical Imaging 2022: Physics of Medical Imaging, 2022, vol. 12031, pp. 729–734.
-        </p><p>[13]
-          S. Shankar, G. Jadick, E. Hoffman et al., “Scanner-specific validation of a CT simulator using a COPD-emulated anthropomorphic phantom,” in Medical Imaging 2022: Physics of Medical Imaging, 2022, vol. 12031, pp. 953–960.
-        </p><p>[14]
-          E. Abadi, G. Jadick, C. McCabe et al., “Development and Application of a Virtual Imaging Trial Platform to Evaluate and Optimize State-of-the-art Photon-Counting CT.” Radiological Society of North America Annual Meeting, 2021.
-        </p><p>[15]
-          E. Abadi, G. Jadick, E. Hoffman, D. Lynch, W. P. Segars, and E. Samei, “COPD quantifications via CT imaging: ascertaining the effects of acquisition protocol using virtual imaging trial,” in Medical Imaging 2021: Physics of Medical Imaging, 2021, vol. 11595, pp. 160–166.
-        </p><p>[16]
-          G. Jadick, E. Abadi, B. Harrawood, S. Sharma, W. P. Segars, and E. Samei, “A scanner-specific framework for simulating CT images with tube current modulation,” Physics in Medicine & Biology, vol. 66, no. 18, p. 185010, 2021.
-        </p><p>[17]
-          G. Jadick, E. Abadi, B. Harrawood, S. Sharma, W. P. Segars, and E. Samei, “A framework to simulate CT images with tube current modulation,” in Medical Imaging 2021: Physics of Medical Imaging, 2021, vol. 11595, pp. 22–30.
-        </p><p>[18]
-          G. Jadick, M. Bartlett, M. Busch, and J. Socolar, “The art and craft of saxophone mouthpiece design.” Fortin Foundation Bass Connections Virtual Showcase, 2020.
-        </p><p>[19]
-          G. Jadick, R. Garces, and C. Schmidt, “Physiology of E. Coli bacteria in high external osmotic pressure.” Conference for undergraduate women in physics at the University of Maryland, 2020.
-        </p><p>[20]
-          G. Jadick, “Gender representation in science policy: A study of Capitol Hill.” Sigma Pi Sigma Physics Congress in Providence, RI, 2019.
-        </p><p>[21]
-          D. Downs, G. Jadick, F. Swaid, S. B. Ross, and A. S. Rosemurgy, “Age and achalasia: how does age affect patient presentation, hospital course, and surgical outcomes?” The American Surgeon, vol. 83, no. 9, pp. 952–961, 2017.
-        </p><p>[22]
-          A. Rosemurgy, D. Downs, G. Jadick et al., “Dissatisfaction after laparoscopic Heller myotomy: The truth is easy to swallow,” The American Journal of Surgery, 2017.
-        </p>
-      </div>
+
+      <h2>Peer-reviewed articles</h2>
+      <ol>
+        <li>
+          E. Abadi, W. Segars, N. Felice, S. Sotoudeh-Paima, E. Hoffman, X.
+          Wang, W. Wang, D. Clark, S. Ye,
+          <strong>G. Jadick,</strong> M. Fryling, D. Frush, E. Samei. “AAPM
+          Truth-based CT (TrueCT) reconstruction grand challenge.”
+          <i>Medical Physics,</i> <span class="year">2025</span>.
+          <a href="https://doi.org/10.1002/mp.17619"
+            >https://doi.org/10.1002/mp.17619</a
+          >
+        </li>
+        <li>
+          <strong>G. Jadick,</strong> M. Ventura, P. La Rivière. “Utility of
+          photon-counting detectors for MV-kV dual-energy computed tomography
+          imaging.” <i>Journal of Medical Imaging</i> 11(S1): S12811–S12811,
+          <span class="year">2024</span>.
+          <a href="https://doi.org/10.1117/1.JMI.11.S1.S12811"
+            >https://doi.org/10.1117/1.JMI.11.S1.S12811</a
+          >
+        </li>
+        <li>
+          H. DeBrosse, <strong>G. Jadick,</strong> L. Meng, P. La Rivière.
+          “Contrast-to-noise ratio comparison between x-ray fluorescence
+          emission tomography and computed tomography.”
+          <i>Journal of Medical Imaging</i> 11(S1): S12808–S12808,
+          <span class="year">2024</span>.
+          <a href="https://doi.org/10.1117/1.JMI.11.S1.S12808"
+            >https://doi.org/10.1117/1.JMI.11.S1.S12808</a
+          >
+        </li>
+        <li>
+          <strong>G. Jadick,</strong> G. Schlafly, P. La Rivière. “Dual-energy
+          computed tomography imaging with megavoltage and kilovoltage X-ray
+          spectra.” <i>Journal of Medical Imaging</i> 11(2): 023501–023501,
+          <span class="year">2024</span>.
+          <a href="https://doi.org/10.1117/1.JMI.11.2.023501"
+            >https://doi.org/10.1117/1.JMI.11.2.023501</a
+          >
+          <span class="note">Featured on journal cover</span>
+        </li>
+        <li>
+          E. Abadi, <strong>G. Jadick,</strong> D. Lynch, W. Segars, E. Samei.
+          “Emphysema quantifications with CT scan: Assessing the effects of
+          acquisition protocols and imaging parameters using virtual imaging
+          trials.” <i>Chest</i> 163(5): 1084–1100,
+          <span class="year">2023</span>.
+          <a href="https://doi.org/10.1016/j.chest.2022.11.033"
+            >https://doi.org/10.1016/j.chest.2022.11.033</a
+          >
+        </li>
+        <li>
+          <strong>G. Jadick,</strong> E. Abadi, B. Harrawood, S. Sharma, W.
+          Segars, E. Samei. “A scanner-specific framework for simulating CT
+          images with tube current modulation.”
+          <i>Physics in Medicine &amp; Biology</i> 66(18): 185010,
+          <span class="year">2021</span>.
+          <a href="https://doi.org/10.1088/1361-6560/ac2269"
+            >https://doi.org/10.1088/1361-6560/ac2269</a
+          >
+        </li>
+        <li>
+          D. Downs, <strong>G. Jadick,</strong> F. Swaid, S. Ross, A. Rosemurgy.
+          “Age and achalasia: how does age affect patient presentation, hospital
+          course, and surgical outcomes?” <i>The American Surgeon</i> 83(9):
+          952–961, <span class="year">2017</span>.
+          <a href="https://doi.org/10.1177/000313481708300931"
+            >https://doi.org/10.1177/000313481708300931</a
+          >
+        </li>
+        <li>
+          A. Rosemurgy, D. Downs, <strong>G. Jadick,</strong> F. Swaid, K.
+          Luberice, C. Ryan, S. Ross. “Dissatisfaction after laparoscopic Heller
+          myotomy: The truth is easy to swallow.”
+          <i>The American Journal of Surgery,</i>
+          <span class="year">2017</span>.
+          <a href="https://doi.org/10.1016/j.amjsurg.2017.03.043"
+            >https://doi.org/10.1016/j.amjsurg.2017.03.043</a
+          >
+        </li>
+      </ol>
+
+      <h2>Conference proceedings</h2>
+      <ol>
+        <li>
+          <strong>G. Jadick,</strong> P. La Rivière. “Optimization-based phase
+          retrieval for material decomposition with multi-energy computed
+          tomography.”
+          <span class="venue"
+            >18th International Meeting on Fully 3D Image Reconstruction in
+            Radiology and Nuclear Medicine</span
+          >, <span class="year">2025</span> (May).
+          <a href="https://doi.org/10.48550/arXiv.2508.12509"
+            >https://doi.org/10.48550/arXiv.2508.12509</a
+          >
+        </li>
+        <li>
+          <strong>G. Jadick,</strong> P. La Rivière. “Accuracy of
+          propagation-based phase-contrast CT under the projection
+          approximation.”
+          <span class="venue"
+            >8th International Conference on Image Formation in X-Ray Computed
+            Tomography</span
+          >, <span class="year">2024</span>.
+          <a href="https://doi.org/10.48550/arXiv.2508.12505"
+            >https://doi.org/10.48550/arXiv.2508.12505</a
+          >
+        </li>
+        <li>
+          <strong>G. Jadick,</strong> P. La Rivière. “Modeling propagation-based
+          x-ray phase-contrast imaging: validity of the projection
+          approximation.”
+          <span class="venue">Proc. Virtual Imaging Trials in Medicine</span>:
+          68–72, <span class="year">2024</span>.
+          <a href="https://doi.org/10.48550/arXiv.2405.05359"
+            >https://doi.org/10.48550/arXiv.2405.05359</a
+          >
+        </li>
+        <li>
+          <strong>G. Jadick,</strong> P. La Rivière. “Cramér–Rao lower bound in
+          the context of spectral X-ray imaging with propagation-based phase
+          contrast.”
+          <span class="venue"
+            >SPIE Medical Imaging: Physics of Medical Imaging</span
+          >
+          12925, <span class="year">2024</span>.
+          <a href="https://doi.org/10.1117/12.3006282"
+            >https://doi.org/10.1117/12.3006282</a
+          >
+        </li>
+        <li>
+          <strong>G. Jadick,</strong> I. Reiser, P. La Rivière. “Sensitivity
+          analysis of dual-energy computed tomography multi-triplet material
+          decomposition.”
+          <span class="venue"
+            >SPIE Medical Imaging: Physics of Medical Imaging</span
+          >
+          12925, <span class="year">2024</span>.
+          <a href="https://doi.org/10.1117/12.3006548"
+            >https://doi.org/10.1117/12.3006548</a
+          >
+        </li>
+        <li>
+          H. DeBrosse, <strong>G. Jadick,</strong> L. Meng, P. La Rivière.
+          “Comparing x-ray fluorescence emission tomography and computed
+          tomography: contrast-to-noise ratios in a numerical mouse phantom.”
+          <span class="venue"
+            >SPIE Medical Imaging: Clinical and Biomedical Imaging</span
+          >
+          12930, <span class="year">2024</span>.
+          <a href="https://doi.org/10.1117/12.3006795"
+            >https://doi.org/10.1117/12.3006795</a
+          >
+        </li>
+        <li>
+          M. Ventura, <strong>G. Jadick,</strong> P. La Rivière. “Comparison of
+          energy-integrating detectors and photon-counting detectors for MV-kV
+          dual-energy imaging on a tomographic therapy system.”
+          <span class="venue"
+            >SPIE Medical Imaging: Physics of Medical Imaging</span
+          >
+          12925, <span class="year">2024</span>.
+          <a href="https://doi.org/10.1117/12.3006854"
+            >https://doi.org/10.1117/12.3006854</a
+          >
+        </li>
+        <li>
+          <strong>G. Jadick,</strong> P. La Rivière. “Optimization of MV-kV
+          dual-energy CT imaging for tomographic therapy.”
+          <span class="venue"
+            >SPIE Medical Imaging: Physics of Medical Imaging</span
+          >
+          12463: 557–566, <span class="year">2023</span>.
+          <a href="https://doi.org/10.1117/12.2653674"
+            >https://doi.org/10.1117/12.2653674</a
+          >
+        </li>
+        <li>
+          S. Shankar, <strong>G. Jadick,</strong> E. Hoffman, J. Atha, J.
+          Sieren, E. Samei, E. Abadi. “Scanner-specific validation of a CT
+          simulator using a COPD-emulated anthropomorphic phantom.”
+          <span class="venue"
+            >SPIE Medical Imaging: Physics of Medical Imaging</span
+          >
+          12031: 953–960, <span class="year">2022</span>.
+          <a href="https://doi.org/10.1117/12.2613212"
+            >https://doi.org/10.1117/12.2613212</a
+          >
+        </li>
+        <li>
+          F. Ria, <strong>G. Jadick,</strong> E. Abadi, J. Solomon, E. Samei.
+          “Comparing two different noise magnitude estimation methods in CT
+          using virtual imaging trials.”
+          <span class="venue"
+            >SPIE Medical Imaging: Physics of Medical Imaging</span
+          >
+          12031: 729–734, <span class="year">2022</span>.
+          <a href="https://doi.org/10.1117/12.2612219"
+            >https://doi.org/10.1117/12.2612219</a
+          >
+        </li>
+        <li>
+          E. Abadi, <strong>G. Jadick,</strong> C. McCabe, S. Sotoudeh, M.
+          Fryling, B. Harrawood, E. Samei, S. Havadej, M. Sedlmair, J. Ramirez,
+          K. Stierstorfer. “Development and Application of a Virtual Imaging
+          Trial Platform to Evaluate and Optimize State-of-the-art
+          Photon-Counting CT.”
+          <span class="venue"
+            >Radiological Society of North America Annual Meeting</span
+          >, <span class="year">2021</span>.
+        </li>
+        <li>
+          <strong>G. Jadick,</strong> E. Abadi, B. Harrawood, S. Sharma, W.
+          Segars, E. Samei. “A framework to simulate CT images with tube current
+          modulation.”
+          <span class="venue"
+            >SPIE Medical Imaging: Physics of Medical Imaging</span
+          >
+          11595: 22–30, <span class="year">2021</span>.
+          <a href="https://doi.org/10.1117/12.2580983"
+            >https://doi.org/10.1117/12.2580983</a
+          >
+        </li>
+        <li>
+          E. Abadi, <strong>G. Jadick,</strong> E. Hoffman, D. Lynch, W. Segars,
+          E. Samei. “COPD quantifications via CT imaging: ascertaining the
+          effects of acquisition protocol using virtual imaging trial.”
+          <span class="venue"
+            >SPIE Medical Imaging: Physics of Medical Imaging</span
+          >
+          11595: 160–166, <span class="year">2021</span>.
+          <a href="https://doi.org/10.1117/12.2581965"
+            >https://doi.org/10.1117/12.2581965</a
+          >
+        </li>
+      </ol>
+
+      <h2>Oral presentations</h2>
+      <ol>
+        <li>
+          <strong>G. Jadick,</strong> P. La Rivière. “Material decomposition of
+          weakly absorptive structures with spectral x-ray phase-contrast CT.”
+          <span class="venue">IEEE Medical Imaging Conference</span>,
+          <span class="year">2025</span> (November).
+          <span class="note">Will present in November</span>
+        </li>
+        <li>
+          <strong>G. Jadick,</strong> P. La Rivière. “A tale of two techniques:
+          multi-energy versus multi-distance material decomposition with x-ray
+          phase-contrast imaging.”
+          <span class="venue">AAPM Midwest Chapter Meeting</span>,
+          <span class="year">2025</span> (April).
+          <span class="note">2nd place, Young Investigator Symposium</span>
+        </li>
+        <li>
+          <strong>G. Jadick,</strong> P. La Rivière. “Modeling propagation-based
+          x-ray phase-contrast imaging: validity of the projection
+          approximation.”
+          <span class="venue">Virtual Imaging Trials in Medicine</span>,
+          <span class="year">2024</span>.
+          <a href="https://doi.org/10.48550/arXiv.2405.05359"
+            >doi:10.48550/arXiv.2405.05359</a
+          >
+        </li>
+        <li>
+          <strong>G. Jadick,</strong> P. La Rivière. “Cramér–Rao lower bound in
+          the context of spectral X-ray imaging with propagation-based phase
+          contrast.” <span class="venue">SPIE Medical Imaging</span>,
+          <span class="year">2024</span>.
+          <a href="https://doi.org/10.1117/12.3006282"
+            >doi:10.1117/12.3006282</a
+          >
+        </li>
+        <li>
+          <strong>G. Jadick,</strong> P. La Rivière. “Dual energy CT imaging
+          with a megavoltage spectrum.”
+          <span class="venue">AAPM Midwest Chapter Meeting</span>,
+          <span class="year">2023</span> (April).
+          <span class="note">2nd place, Young Investigator Symposium</span>
+        </li>
+        <li>
+          <strong>G. Jadick,</strong> E. Abadi, B. Harrawood, S. Sharma, W.
+          Segars, E. Samei. “A framework to simulate CT images with tube current
+          modulation.” <span class="venue">SPIE Medical Imaging</span>,
+          <span class="year">2021</span>.
+          <a href="https://doi.org/10.1117/12.2580983"
+            >doi:10.1117/12.2580983</a
+          >
+        </li>
+      </ol>
+
+      <h2>Posters</h2>
+      <ol>
+        <li>
+          <strong>G. Jadick,</strong> C. Riggs, P. La Rivière. “Quantitative
+          Forward Modeling of Propagation-Based X-Ray Phase-Contrast Imaging at
+          Clinical Scale.” <span class="venue">AAPM Annual Meeting</span>,
+          <span class="year">2025</span> (July).
+          <a
+            href="https://aapm.confex.com/aapm/2025am/meetingapp.cgi/Paper/17710"
+            >link</a
+          >
+          <span class="note">Blue ribbon poster award</span>
+        </li>
+        <li>
+          <strong>G. Jadick,</strong> P. La Rivière. “Material decomposition
+          with propagation-based x-ray phase contrast: a comparison of
+          multi-energy and multi-distance imaging.”
+          <span class="venue">AAPM Annual Meeting</span>,
+          <span class="year">2025</span> (July).
+          <a
+            href="https://aapm.confex.com/aapm/2025am/meetingapp.cgi/Paper/18361"
+            >link</a
+          >
+        </li>
+        <li>
+          <strong>G. Jadick,</strong> P. La Rivière. “Optimization-based phase
+          retrieval for material decomposition with multi-energy computed
+          tomography.”
+          <span class="venue"
+            >18th International Meeting on Fully 3D Image Reconstruction in
+            Radiology and Nuclear Medicine</span
+          >, <span class="year">2025</span> (May).
+          <a href="https://doi.org/10.48550/arXiv.2508.12509"
+            >doi:10.48550/arXiv.2508.12509</a
+          >
+        </li>
+        <li>
+          <strong>G. Jadick,</strong> P. La Rivière. “Accuracy of
+          propagation-based phase-contrast CT under the projection
+          approximation.”
+          <span class="venue"
+            >8th International Conference on Image Formation in X-Ray Computed
+            Tomography</span
+          >, <span class="year">2024</span>.
+          <a href="https://doi.org/10.48550/arXiv.2508.12505"
+            >doi:10.48550/arXiv.2508.12505</a
+          >
+        </li>
+        <li>
+          <strong>G. Jadick,</strong> P. La Rivière. “An estimation theory
+          approach to assessing spectral x-ray phase-contrast imaging.”
+          <span class="venue">Gordon Research Conference on Image Science</span
+          >, <span class="year">2024</span> (June).
+        </li>
+        <li>
+          <strong>G. Jadick,</strong> I. Reiser, P. La Rivière. “Sensitivity
+          analysis of dual-energy CT multi-triplet material decomposition.”
+          <span class="venue">SPIE Medical Imaging</span>,
+          <span class="year">2024</span>.
+          <a href="https://doi.org/10.1117/12.3006548"
+            >doi:10.1117/12.3006548</a
+          >
+        </li>
+        <li>
+          <strong>G. Jadick,</strong> P. La Rivière. “Optimization of MV-kV
+          dual-energy CT imaging for tomographic therapy.”
+          <span class="venue">SPIE Medical Imaging</span>,
+          <span class="year">2023</span>.
+          <a href="https://doi.org/10.1117/12.2653674"
+            >doi:10.1117/12.2653674</a
+          >
+        </li>
+        <li>
+          <strong>G. Jadick,</strong> M. Bartlett, M. Busch, J. Socolar. “The
+          art and craft of saxophone mouthpiece design.”
+          <span class="venue"
+            >Fortin Foundation Bass Connections Virtual Showcase</span
+          >, <span class="year">2020</span> (May).
+          <span class="note">Runner-up poster award</span>
+        </li>
+        <li>
+          <strong>G. Jadick,</strong> R. Garces, C. Schmidt. “Physiology of
+          <i>E. coli</i> bacteria in high external osmotic pressure.”
+          <span class="venue"
+            >Conference for Undergraduate Women in Physics (University of
+            Maryland)</span
+          >, <span class="year">2020</span> (January).
+        </li>
+      </ol>
       <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#contact'"
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
       />
     </section>
 
@@ -272,12 +640,12 @@
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-        <img
-          src="./assets/email.png"
-          alt="Email icon"
-          class="icon contact-icon email-icon"
-        />
-        <p>giavanna [at] uchicago [dot] edu</p>
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>giavanna [at] uchicago [dot] edu</p>
         </div>
       </div>
     </section>
@@ -293,11 +661,9 @@
           </ul>
         </div>
       </nav>
-      <p>
-        &#169; Giavanna Jadick 2024 | Last updated on 06 Feb 2025
-      </p>
+      <p>&#169; Giavanna Jadick 2025 | Last updated on 22 Aug 2026</p>
     </footer>
-    
+
     <script src="script.js"></script>
   </body>
 </html>
