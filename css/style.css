@@ -91,10 +91,10 @@ a {
 }
 
 a:hover {
-  color: grey;
+  color: gray;
   text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-underline-offset: 0.4rem;
+  text-decoration-color: gray;
 }
 
 .logo {
