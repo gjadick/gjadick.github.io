@@ -99,7 +99,7 @@ a:hover {
 
 .logo {
   font-size: 2rem;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .logo:hover {
