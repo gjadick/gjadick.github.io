@@ -218,7 +218,6 @@ section {
 .section__pic-container {
   display: flex;
   height: 520px;
-  width: 410px;
   margin: auto 0;
 }
 
