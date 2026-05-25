@@ -118,12 +118,13 @@
               develop computational methods for advanced X-ray and CT imaging.
             </p>
             <p>
-              My dissertation research unites <b>spectral imaging</b> with
-              <b>propagation-based phase contrast</b> through the lens of
-              material decomposition. I study how and when conventional
-              approximations in phase-contrast imaging break down, and I develop
-              computational strategies for incorporating more general image
-              acquisition models to improve basis material image reconstruction.
+              My dissertation research unites traditional <b>spectral</b
+              ><b>imaging</b> with <b>propagation-based</b><b>phase</b
+              ><b>contrast</b> through the lens of material decomposition. I
+              study how and when conventional approximations in phase-contrast
+              imaging break down, and I develop computational strategies for
+              incorporating more general image acquisition models to improve
+              basis material image reconstruction.
             </p>
           </div>
         </div>
@@ -140,21 +141,22 @@
           <div class="text-container">
             <p>
               I am broadly interested in spectral photon-counting CT, phase
-              contrast, inverse problems, and computational imaging. I build
-              large-scale Python simulation and reconstruction tools, including
-              GPU-parallelized forward models and automatically differentiable
-              iterative reconstruction algorithms. My recent work spans
-              applications to high-resolution phase-contrast micro-CT of
-              zebrafish, spectral photon-counting mammography for
+              contrast, inverse problems, and computational imaging. I have a
+              strong technical foundation, building large-scale Python
+              simulation and reconstruction tools that are efficiently
+              GPU-parallelized with automatic differentiation compatibility. My
+              recent work spans applications to high-resolution phase-contrast
+              micro-CT of zebrafish, spectral photon-counting mammography for
               microcalcification morphology classification, multi-material
               decomposition for cardiac CT, and MV-kV dual-energy CT for
               radiotherapy imaging.
             </p>
             <p>
               I graduated cum laude from Duke University in 2020 with a BS in
-              physics and BA in political science. There, I researched realistic
-              CT simulation, mechanosensing of <i>E. coli</i> bacteria, and
-              vintage saxophone mouthpiece acoustics.
+              physics and BA in political science. There, I researched
+              scanner-specific CT simulation, mechanosensing of
+              <i>E. coli</i> bacteria, and vintage saxophone mouthpiece
+              acoustics.
             </p>
             <p>
               My research code and related projects are publicly available on
@@ -192,11 +194,13 @@
               />
             </div>
             <p>
-              We developed simulation and reconstruction tools for
-              phase-contrast synchrotron micro-CT, comparing the projection
-              approximation with a multi-slice forward model for more accurately
-              incorporating high-resolution internal refractive effects.
-              Manuscript in progress.
+              I developed a GPU-accelerated simulation framework for
+              propagation-based phase-contrast synchrotron micro-CT, comparing
+              the projection approximation with an auto-differentiable
+              multi-slice forward model for more accurately including refractive
+              effects within samples. Subsequent reconstructions were compared
+              with our iterative method versus filtered-back projection and
+              conventional phase retrieval. Manuscript in progress.
             </p>
             <div class="btn-container">
               <button
@@ -240,11 +244,14 @@
               />
             </div>
             <p>
-              We developed an auto-differentiation enabled iterative material
-              decomposition method for spectral X-ray phase-contrast imaging
-              with photon-counting detectors, using a full polychromatic model
-              to recover quantitative material images, with applications to
-              microcalcification morphology classification. Manuscript in
+              I expanded the multi-slice forward model to include a full
+              polychromatic source spectrum and non-ideal energy-dependent
+              system effects, developing a full spectral material decomposition
+              method for X-ray phase-contrast imaging with energy-discrimating
+              photon-counting detection. This was applied to a sensitivity
+              analysis of model-based iterative material-decomposition
+              phase-retrieval methods, quantifying the degree of improvement as
+              more forward model elements were incorporated. Manuscript in
               progress.
             </p>
             <div class="btn-container">
@@ -286,12 +293,13 @@
               />
             </div>
             <p>
-              We developed a Cramér–Rao lower bound (CRLB) framework for
-              spectral phase-contrast imaging, building various toy models to
-              incorporate the information of propagation-based edge-enhancement
-              effects. These models were applied to energy threshold
-              optimization of polychromatic photon-counting detector
-              measurements. Manuscript in progress.
+              I developed a basis material Cramér–Rao lower bound (CRLB)
+              framework for spectral propagation-based X-ray phase-contrast
+              imaging, building various toy models to include the information of
+              typical edge-enhancement effects. These models were applied to
+              energy threshold optimization of polychromatic photon-counting
+              detector measurements, including simulation validation with
+              maximum likelihood estimation. Manuscript in progress.
             </p>
             <div class="btn-container">
               <button
@@ -335,11 +343,12 @@
               />
             </div>
             <p>
-              We assessed a novel dual-energy CT approach: combining a
-              megavoltage (MV) and kilovoltage (kV) source in "MV-kV" imaging
-              for use on radiotherapy systems that are conveniently already
-              equipped with the two x-ray sources. Our publication was featured
-              on the cover of the Journal of Medical Imaging.
+              I explored and quantified the potential utility of a novel
+              dual-energy CT approach: combining a megavoltage (MV) and
+              kilovoltage (kV) source in "MV-kV" imaging for use on radiotherapy
+              systems that are conveniently already equipped with the two X-ray
+              sources. Our publication was featured on the cover of the Journal
+              of Medical Imaging.
             </p>
             <div class="btn-container">
               <button
@@ -379,10 +388,12 @@
               />
             </div>
             <p>
-              We compared MV-kV dual-energy CT using new photon-counting
+              I compared MV-kV dual-energy CT using new photon-counting
               detectors (PCDs) versus conventional energy-integrating detectors
               (EIDs), optimizing spectral dose allocation and quantifying
-              contrast-to-noise ratio improvement.
+              contrast-to-noise ratio improvement. Due to the especially severe
+              up-weighting of low-contrast megavoltage X-rays with conventional
+              EIDs, PCDs show particular utility for this application.
             </p>
             <div class="btn-container">
               <button
@@ -424,10 +435,14 @@
               />
             </div>
             <p>
-              We performed sensitivity analysis of a dual-energy CT method for
+              I performed sensitivity analysis of a dual-energy CT method for
               material decomposition into more than two materials, with
-              applications to cardiac imaging for differentiating soft tissue,
-              adipose, calcium, and iodine.
+              applications to plaque risk analysis in cardiac imaging by
+              differentiating soft tissue, adipose, calcium, and iodine. The
+              method utilizes conventional two-material decomposition and a
+              volume constraint to perform material-triplet decomposition,
+              selecting the three basis materials with a pixel-by-pixel
+              criterion.
             </p>
             <div class="btn-container">
               <button
@@ -613,7 +628,7 @@
           propagation-based phase-contrast CT under the projection
           approximation.”
           <span class="venue"
-            >8th International Conference on Image Formation in X-Ray Computed
+            >8th International Conference on Image Formation in X-ray Computed
             Tomography</span
           >, <span class="year">2024</span>.
           <a href="https://doi.org/10.48550/arXiv.2508.12505"
@@ -886,7 +901,7 @@
           propagation-based phase-contrast CT under the projection
           approximation.”
           <span class="venue"
-            >8th International Conference on Image Formation in X-Ray Computed
+            >8th International Conference on Image Formation in X-ray Computed
             Tomography</span
           >, <span class="year">2024</span>.
           <a href="https://doi.org/10.48550/arXiv.2508.12505"
@@ -969,7 +984,7 @@
           </ul>
         </div>
       </nav>
-      <p>&#169; Giavanna Jadick 2026 | Last updated on 23 May 2026</p>
+      <p>&#169; Giavanna Jadick 2026 | Last updated on 25 May 2026</p>
     </footer>
 
     <script src="script.js"></script>
